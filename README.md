@@ -1,11 +1,16 @@
 # laskmit-proyecto-openclaw
 
-En la carpeta workspace está todo lo que se generó en VSCode
+En este repositorio hay dos carpetas workspace
+La carpeta "workspace-proyecto-anterior" contiene la entrega anterior que correspondió a la conexión con telegram y que incluye la sección de abajo donde indica Evidencia del chat funcionando
+
+## WORKSPACE-PROYECTO-ANTERIOR
+
+En la carpeta workspace-proyecto-anterior está todo lo que se generó en VSCode
 Ademas se incluyó imagen con evidencia de la conexión desde vscode (en imagenes-evidencia). En la imagen se tachó la ip del servidor por sugerencias de seguridad de COPILOT.
 
 Aqui en este archivo se incluye la conversación de verificación con openclaw.
 
-## Evidencia del chat funcionando:
+### Evidencia del chat funcionando:
 
 Ya te configuré?                                                                                                                  
 
@@ -30,8 +35,16 @@ Sin embargo, todavía hay espacio para personalizarme más:
  local ready | idle                                                                                                   
  agent main | session main | litellm/online/openrouter/deepseek/deepseek-v3.2 | tokens ?/128k                         
 
-## EVIDENCIA SIGUIENTE TAREA
+### EVIDENCIA SIGUIENTE TAREA
 
 En el archivo NOTES.md, dentro del directorio openclaw-connection, se encuentra la descripción de la tarea donde se conectó telegram con openclaw y las herramientas de google, utilizando composio y VSCODE.
 
+
+## WORKSPACE-PROYECTO SKILLS
+
+La carpeta "workspace-Proyecto-skills" corresponde al siguiente proyecto donde se construyen los archivos AGENTS.md, IDENTITY.md, SOUL.md, TOOLS.md y USER.md y luego se crean los skills de la IA.
+
+### Evidencias del proyecto skills
+
+En la carpeta /workspace-proyecto-skills/evidencias-proyecto se encuentra el archivo NOTES.md con la historia de lo que se ejecutó y archivos anexos que soportan o indicado en ese archivo.
 
