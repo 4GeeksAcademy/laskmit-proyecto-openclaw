@@ -48,3 +48,6 @@ La carpeta "workspace-Proyecto-skills" corresponde al siguiente proyecto donde s
 
 En la carpeta /workspace-proyecto-skills/evidencias-proyecto se encuentra el archivo NOTES.md con la historia de lo que se ejecutó y archivos anexos que soportan o indicado en ese archivo.
 
+### Especificaciones previas en SKILLS_DESIGN
+
+En el mencionado archivo, se encuentran las respuestas a las preguntas indicadas en el proyecto sobre generar unas especificaciones del skill antes de crearlo.
