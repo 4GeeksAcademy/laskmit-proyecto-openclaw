@@ -51,3 +51,6 @@ En la carpeta /workspace-proyecto-skills/evidencias-proyecto se encuentra el arc
 ### Especificaciones previas en SKILLS_DESIGN
 
 En el mencionado archivo, se encuentran las respuestas a las preguntas indicadas en el proyecto sobre generar unas especificaciones del skill antes de crearlo.
+Se generaron las especificaciones para dos skills
+1. guardar_notas_telegram_Googledocs
+2. flujo_caja_personal
