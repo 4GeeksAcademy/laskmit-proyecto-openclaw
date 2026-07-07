@@ -1,6 +1,6 @@
 # DISEÑO (ESPECIFICACIONES) DE DOS SKILLS
 
-## SKILL 01: `guardar_notas_telegram_Googledocs.md`
+## SKILL 01: `guardar-notas-telegram-Googledocs.md`
 
 ### ¿Qué hace esta skill?
 Identifica y organiza enlaces, notas y archivos multimedia desde dos fuentes posibles:
@@ -40,17 +40,18 @@ El agente procesará la información a través de dos flujos exclusivos de entra
 - Para las notas varias del dia a dia, cada vez que procese una nota debe enviar a telegram de Yolada una notificación indicando nota recibida, titulo y categoria 
 
 
-## SKILL 02: `flujo_caja_personal.md`
+## SKILL 02: `flujo-caja-personal.md`
 
 ### ¿Qué hace esta skill?
-Administra el flujo de caja personal (ingresos, gastos, cuentas por pagar y gastos con vencimientos fijos) a través de comandos específicos de Telegram, actualizando matrices de control en Google Docs/Sheets y programando recordatorios automáticos en Google Calendar.
+Administra el flujo de caja personal (ingresos, gastos, cuentas por pagar y gastos con vencimientos fijos) a través de comandos específicos de Telegram, actualizando matrices de control en Google Docs/Sheets y programando recordatorios automáticos en Google Calendar. Tambien responde un panorama de pagos estimados a 30 dias con el comando "Flujo de Caja".
 
 ### ¿Qué input necesita el agente?
-El agente procesará el flujo de caja mediante 4 disparadores (comandos) en el chat de Telegram:
+El agente procesará el flujo de caja mediante 5 disparadores (comandos) en el chat de Telegram:
 1. **Comando "Gasto" + texto + Foto:** Una imagen de la factura o recibo acompañada de la palabra "Gasto" en alguna parte del texto. Puede ser que se omita la foto
 2. **Comando "CxP" o "Pago CxP" + Texto:** Un mensaje de texto con la estructura: `CxP [Concepto] [Monto]`.  Esto sería una promesa eventual de pago.
 3. **Comando "Ingreso" + Texto:** Un mensaje con el monto recibido en Bolívares (Bs) para activar el motor de sugerencias.
 4. **Tabla Base de Gastos Fijos:** Un documento inicial que se define con los gastos mensuales recurrentes y sus días y montos aproximados de pago.
+5. **Comando "Flujo de Caja":** Solicita por Telegram el listado de pagos estimados de los proximos 30 dias, ordenados por fecha, con detalle y monto.
 
 ### ¿Qué sabe ya el agente?
 - Conoce y ya ha utilizado la conexión a través de Composio que está en TOOLS.md para las herramientas de google, bajo la cuenta yolanda.4geeks@gmail.com.
@@ -64,10 +65,10 @@ El agente procesará el flujo de caja mediante 4 disparadores (comandos) en el c
 #### 1. Estructura y Destino en Google Drive (El Tablero de Control)
 El agente mantendrá un archivo matriz (puede ser un Google Doc estructurado o una Hoja de Cálculo) en la carpeta `/Finanzas_Personales/` con tres tablas de proceso bien definidas:
 
-* **Tabla A: Registro de Gastos y Facturas (Histórico)**
+* **Tabla A: Registro de Ingresos, Gastos y Facturas (Histórico)**
   * *Columnas:* Fecha | Concepto/Comercio | Monto | Enlace a la Factura (archivada automáticamente en Drive).
 * **Tabla B: Cuentas por Pagar (Deudas Activas - CxP)**
-  * *Columnas:* Fecha de Registro | Concepto | Monto | Estado (Pendiente / Pagado) | Alerta en Calendar (Sí/No).
+  * *Columnas:* Fecha de Registro | Fecha Compromiso de pago | Concepto | Monto | Estado (Pendiente / Pagado) | Alerta en Calendar (Sí/No).
 * **Tabla C: Planificador de Gastos Fijos Mensuales**
   * *Columnas:* Día Aprox. | Descripción | Monto Estimado | Alerta en Calendar (Sí/No).
 
@@ -89,4 +90,6 @@ Al leer la "Tabla Base de Gastos Fijos", el agente creará automáticamente even
 * **Al recibir un Ingreso:** El agente procesa el flujo y sugiere la proxima cuenta a pagar por Telegram:
 
 * **Solicitud de Saldo:** En cualquier momento se puede solicitar el saldo al agente y éste lo responde en Telegram
+
+* **Solicitud de Flujo de Caja:** En cualquier momento se puede solicitar "Flujo de Caja" y el agente responde en Telegram con pagos estimados de los proximos 30 dias, ordenados por fecha, indicando detalle de cada pago y monto.
 

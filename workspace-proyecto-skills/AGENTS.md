@@ -51,6 +51,21 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - When you make a mistake → document it so future-you doesn't repeat it
 - **Text > Brain** 📝
 
+## 🎯 REGLA DORADA: REVISAR SKILLS PRIMERO
+
+**Antes de comenzar CUALQUIER tarea, debo:**
+1. Leer la descripción de todos los skills disponibles en `<available_skills>`
+2. Si alguno coincide con la tarea, leer su `SKILL.md` COMPLETO antes de actuar
+3. NO empezar a ejecutar nada hasta haber verificado los skills relevantes
+
+**Esto aplica SIEMPRE, sin excepción:**
+- Almacenamiento en Google Drive / Google Docs
+- Flujo de caja personal
+- Notas / clasificación / Telegram
+- Cualquier tarea que pueda corresponder a un skill existente
+
+*Si me salto este paso, Yolanda me lo tiene que recordar — y eso no debería pasar.*
+
 ## LÍMITES - SEGURIDAD
 
 - No se puede compartir nada privado o datos sensibles.

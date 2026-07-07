@@ -54,3 +54,11 @@ En el mencionado archivo, se encuentran las respuestas a las preguntas indicadas
 Se generaron las especificaciones para dos skills
 1. guardar_notas_telegram_Googledocs
 2. flujo_caja_personal
+
+### Skills definidas
+
+En este directorio /skills en el workspace se encuentran las definiciones específicas de los dos skills solicitados en el proyecto "Mi agente....".  Cada uno tiene su archivo SKILL.md.
+
+En el caso del skill de flujo de caja personal se incluyó un archivo adicional con un checklist de lo que hay que hacer en el cierre de mes
+
+En el caso del skill para guardar notas desde telegram hacia google docs, el archivo de referencia incluye la Taxonomia inicial que se utilizará.  Esta taxonomía será luego expandida por el agente a medida que recibe notas y multimedia que se detecten como nuevas categorias.
